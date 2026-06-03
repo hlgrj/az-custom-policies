@@ -93,6 +93,7 @@ Audits or denies Azure Static Web Apps whose `repositoryUrl` does not begin with
 
 ```
 definitions/          Policy definition JSON files (one per policy)
+deploy/               Standalone Bicep deployment for manual testing (see deploy/README.md)
 tests/
   modules/            Reusable Bicep modules shared across test deployments
   <policy-name>/      Per-policy test folder (name matches definition filename)
@@ -100,6 +101,8 @@ tests/
     policy.bicep      Deploys the policy definition and assignment (subscription scope)
     TEST-CASES.md     Test case table and step-by-step test sequence
 ```
+
+See [deploy/README.md](deploy/README.md) for instructions on deploying a self-contained set of test resources.
 
 ## Testing
 
